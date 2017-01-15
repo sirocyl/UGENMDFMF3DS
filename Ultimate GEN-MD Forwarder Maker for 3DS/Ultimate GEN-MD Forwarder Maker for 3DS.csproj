@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\gpl\Ultimate GEN-MD Forwarder Maker for 3DS.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F240ABE-DDB9-4B7A-BAC5-B2F374CFE9F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Ultimate GEN-MD Forwarder Maker for 3DS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Ultimate_GEN_MD_Forwarder_Maker_for_3DS</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.OpenGl">
+      <HintPath>lib\Tao.OpenGl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DamienG\Security\Cryptography\Crc32.cs" />
+    <Compile Include="ColorMatrix.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game_info.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="frmPickButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemapButtons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapping3DS.cs" />
+    <Compile Include="Textures.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="YLScsDrawing\Imaging\ImageData.cs" />
+    <Compile Include="YLScsDrawing\Imaging\Filters\FreeTransform.cs" />
+    <Compile Include="YLScsDrawing\Geometry\Vector.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="classes\BoundingVolume.cs" />
+    <Compile Include="classes\AxisAlignedBoundingBox.cs" />
+    <Compile Include="classes\OrientedBoundingBox.cs" />
+    <Compile Include="classes\CANM.cs" />
+    <Compile Include="classes\CGFX.cs" />
+    <Compile Include="classes\CGFXWriterContext.cs" />
+    <Compile Include="classes\CMDL.cs" />
+    <Compile Include="classes\ColorFormat.cs" />
+    <Compile Include="classes\DAE.cs" />
+    <Compile Include="classes\DICT.cs" />
+    <Compile Include="classes\EndianBinaryReader.cs" />
+    <Compile Include="classes\Endianness.cs" />
+    <Compile Include="classes\EndianBinaryWriter.cs" />
+    <Compile Include="classes\ETC1.cs" />
+    <Compile Include="classes\Extensions.cs" />
+    <Compile Include="classes\IOUtil.cs" />
+    <Compile Include="classes\Matrix33.cs" />
+    <Compile Include="classes\Matrix34.cs" />
+    <Compile Include="classes\Matrix43.cs" />
+    <Compile Include="classes\Matrix44.cs" />
+    <Compile Include="classes\MayaASCIIWriter.cs" />
+    <Compile Include="classes\MTL.cs" />
+    <Compile Include="classes\NativeMethods.cs" />
+    <Compile Include="classes\OBJ.cs" />
+    <Compile Include="classes\PatriciaTreeGenerator.cs" />
+    <Compile Include="classes\Polygon.cs" />
+    <Compile Include="classes\PolygonType.cs" />
+    <Compile Include="classes\SignatureNotCorrectException.cs" />
+    <Compile Include="classes\TXOB.cs" />
+    <Compile Include="classes\ReferenceTexture.cs" />
+    <Compile Include="classes\PixelBasedTexture.cs" />
+    <Compile Include="classes\ImageTextureCtr.cs" />
+    <Compile Include="classes\ValueTypeTypeConverter.cs" />
+    <Compile Include="classes\Vector2TypeConverter.cs" />
+    <Compile Include="classes\Vector2.cs" />
+    <Compile Include="classes\Vector3TypeConverter.cs" />
+    <Compile Include="classes\Vector3.cs" />
+    <Compile Include="classes\Vector4.cs" />
+    <Compile Include="classes\GFXUtil.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMain.resx" />
+    <EmbeddedResource Include="frmPickButton.resx" />
+    <EmbeddedResource Include="frmRemapButtons.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
